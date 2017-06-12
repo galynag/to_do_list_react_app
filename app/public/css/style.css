@@ -58,3 +58,7 @@ button {
   color: #d3d3d3;
   text-decoration: line-through;
 }
+.completed {
+  color: #d3d3d3;
+  text-decoration: line-through;
+}

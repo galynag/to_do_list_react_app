@@ -1,8 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-// import './index.css';
+import {render} from 'react-dom';
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
+import App from './containers/App'
+import reducer from './ttttt'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const store = createStore(reducer)
+/* Для этого мы будем использовать Provider из react-redux.
+ Это сделает наш экземпляр хранилища доступным для всех компонентов, которые располагаются в Provider компоненте.*/
+render (
+    <Provider store={store}>
+        <App todos={[]}/>
+    </Provider>,
+    document.getElementById('root')
+)
