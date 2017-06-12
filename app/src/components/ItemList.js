@@ -21,7 +21,7 @@ export default class ItemList extends Component{
                     checked={todo.completed}
                     onChange={this.handleCompleteClick}
                 />
-                <p className={classnames({completed:todo.completed})}>{todo.text}</p>
+                <p className={'item-name '+classnames({completed:todo.completed})}>{todo.text}</p>
                 <span className={classnames({completed:todo.completed})}>Total time is </span>
                 <span className={classnames({completed:todo.completed})}>00:00:00</span>
                 <button

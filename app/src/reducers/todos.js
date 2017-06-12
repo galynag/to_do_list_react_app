@@ -2,7 +2,7 @@ import { ADD_TODO, COMPLETE_TODO } from '../constants/ActionTypes'
 
 const initialState = {
     todos: [{
-        text: 'Complete Task',
+        text: 'Default task',
         completed: false,
         id: 0,
         total: 0,

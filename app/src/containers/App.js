@@ -11,8 +11,7 @@ import * as TodoActions from '../actions'
 
 const App = props => (
       <div>
-
-                <Header addTodo={props.action.addTodo}/>
+                <Header addTodo={props.actions.addTodo}/>
                 <MainSection {...props} />
       </div>
 )

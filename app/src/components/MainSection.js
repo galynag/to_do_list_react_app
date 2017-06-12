@@ -12,7 +12,6 @@ export default class MainSection extends Component {
         console.log(actions);
         return (
             <div className="list-box">
-                <h1>Create your plans</h1>
                     {todos.map(todo =>
                         <ItemList key={todo.id} todo={todo} {...actions}/>
                     )}
