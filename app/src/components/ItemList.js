@@ -7,9 +7,13 @@ export default class ItemList extends Component{
     static propTypes = {
         todo: PropTypes.object.isRequired,
         completeTodo: PropTypes.func.isRequired
+
     }
     handleCompleteClick = () => {
         this.props.completeTodo(this.props.todo.id);
+    }
+    delClick= () => {
+        this.props.deleteTodo(this.props.todo.id);
     }
     render ()  {
         const {todo} = this.props;
